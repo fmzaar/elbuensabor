@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cartProduct.css">
+    <script src="https://kit.fontawesome.com/d28cf7f9e3.js" crossorigin="anonymous"></script>
+    <title>El Buen Sabor | Detalle Compra</title>
+</head>
+<body>
+    <!--COMIENZO BARRA NAVEGACIÓN-->
+    <div id="barra-nav">
+        <div id="barra-busqueda">
+            <input type="text" placeholder="Buscar..."><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Menú/Categorias</a></li>
+                <li><a href="index.html">Promos</a></li>
+                <li><a href="#contactanos">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div id="btn-sesiones">
+            <div id="menu-toggle">&#9776;</div>
+            <a href="register.html"><button>Sign Up</button></a>
+            <a href="login.html"><button>Log In</button></a>
+        <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    <!--FIN BARRA NAVEGACIÓN-->
+    <script>
+        // JavaScript para manejar el clic en el botón del menú desplegable
+        document.getElementById('menu-toggle').addEventListener('click', function (e) {
+            e.stopPropagation(); // Evita que el clic en el botón se propague al documento
+            document.getElementById('barra-nav').classList.toggle('active');
+        });
+
+        // Evento de clic en el documento para cerrar el menú desplegable si se hace clic fuera de él
+        document.addEventListener('click', function (e) {
+            const barraNav = document.getElementById('barra-nav');
+            if (barraNav.classList.contains('active') && !barraNav.contains(e.target)) {
+                barraNav.classList.remove('active');
+            }
+        });
+    </script>
+     <!--CARRUSEL-->
+     <div id="carrusel-container">
+        <div id="carrusel"></div>
+    </div>
+    <!--FIN CARRUSEL-->
+
+    <!--COMIENZO SECCIÓN CARRRITO DE COMPRAS-->
+    <section id="titulos">Carrito de compras</section>
+    <div id="producto-seleccionado-container">
+        <div id="producto-seleccionado">
+            <div id="img">
+                <img src="../img/pizza.jpeg" alt="">
+            </div>
+                <div id="nombre-producto-seleccionado">
+                    <span id="nombre">Nombre Producto</span>
+                    <p>Descripción detallada del producto en cuestión</p>
+                    <div id="botones-productos">
+                    <span id="precio">$2900</span>
+                    <div id="minplus">
+                    <i id="minus" class="fa-solid fa-circle-minus"></i><button>Unidades: 1</button><i id="plus" class="fa-solid fa-circle-plus"></i>
+                    </div>
+                    <button id="btn-cancelar">Cancelar</button>
+                    </div>
+                </div>
+        </div>
+        <div id="producto-seleccionado">
+            <div id="img">
+                <img src="../img/pizza.jpeg" alt="">
+            </div>
+                <div id="nombre-producto-seleccionado">
+                    <span id="nombre">Nombre Producto</span>
+                    <p>Descripción detallada del producto en cuestión</p>
+                    <div id="botones-productos">
+                    <span id="precio">$2900</span>
+                    <div id="minplus">
+                        <i id="minus" class="fa-solid fa-circle-minus"></i><button>Unidades: 2</button><i id="plus" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    <button id="btn-cancelar">Cancelar</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <!--FIN SECCION CARRITO COMPRAS-->
+
+        <!--COMIENZO SECCIÓN DETALLE-->
+        <section id="titulos">Detalle Compra</section>
+        <div id="detalle-compra">
+            <!--COMIENZO RENGLONES DE LOS PRODUCTOS A COMPRAR-->
+            <div id="renglon-detalle-compra"> 
+                <span id="total-prod">Total Productos: 3</span>
+                <span id="total-prod">$8700</span>
+            </div>
+            <div id="renglon-detalle-compra"> 
+                <span id="total-prod">Producto 1</span>
+                <span id="total-prod">$2900</span>
+            </div>
+            <div id="renglon-detalle-compra"> 
+                <span id="total-prod">Producto 2</span>
+                <span id="total-prod">$2900</span>
+            </div>
+            <div id="renglon-detalle-compra"> 
+                <span id="total-prod">Producto 3</span>
+                <span id="total-prod">$2900</span>
+            </div>
+            <div id="renglon-detalle-compra"> 
+                <span id="total-prod">Descuento</span>
+                <span id="total-prod">--</span>
+            </div>
+            <div id="renglon-detalle-compra"> 
+                <span id="total-prod">TOTAL</span>
+                <span id="total-prod">$8700</span>
+            </div>
+            <!--FIN RENGLONES DE LOS PRODUCTOS A COMPRAR-->
+            <div id="forma-entrega-pago">
+                <label>Seleccionar:</label>
+                <span><input type="checkbox">Envío a Domicilio</span>
+                <span><input type="checkbox">Retiro en Local</span>
+            </div>
+            <div id="forma-entrega-pago">
+                <label>Seleccionar:</label>
+                <span><input type="checkbox">Mercado Pago</span>
+            </div>
+            <div id="datos-cliente">
+                <input type="tel" id="datos" placeholder="Ingrese su Teléfono">
+                <input type="text" id="datos" placeholder="Ingrese su Dirección">
+                <input type="text" id="datos" placeholder="Ingrese su Departamento">
+            </div>
+            <div id="btn-confirmar">
+            <button id="btn-confirmar-pedido">Confirmar Pedido</button>
+            </div>
+        </div>
+        <!--FIN SECCIÓN DETALLE-->
+        
+        <!--FOOTER-->
+        <div id="agradecimiento">
+            <h1>Gracias por comprar en El Buen Sabor!!</h1>
+        </div>
+        <footer id="contactanos">
+            <div id="info-contacto">
+                <h2>Contactanos!!</h2>
+                <div id="icon">
+                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i><span>+542617689**</span>
+                </div>
+                <div id="icon">
+                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i><span>ElBuenSaborMendoza@gmail.com</span>
+                </div>
+            </div>
+            <div id="info-empresa">
+                <a href="http://">Términos</a>
+                <a href="http://">Privacidad</a>
+                <a href="http://">©ElBuenSabor Argentina - 2023</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

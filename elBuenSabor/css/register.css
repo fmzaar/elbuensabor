@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    height: 960px;
+}
+#container{
+    display: flex;
+}
+#img{
+    background-image: url(../img/pizzaaaa.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-box-shadow: 2px 1px 8px 0px rgba(0,0,0,0.63);
+    -moz-box-shadow: 2px 1px 8px 0px rgba(0,0,0,0.63);
+    box-shadow: 2px 1px 8px 0px rgba(0,0,0,0.63);
+}
+#signUp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 35px;
+}
+span{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family:'IBM Plex Sans', sans-serif;
+}
+
+#boton-google{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 35px;
+}
+
+#btn-google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    height: 70px;
+    font-size: 24px;
+    background-color: white;
+    border-radius: 5px;
+    gap: 10px;
+}
+a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn-google:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+#line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+#title{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    column-gap: 150px;
+}
+#title::before, #title::after{
+    content: "";
+    width: 300px;   
+    height: 2px;
+    background-color: #808080;
+    display: block;
+} 
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+#nombreApellido{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+#nombreApellido input{
+    width: 255px;
+    height: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(163,163,163,1);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(163,163,163,1);
+    box-shadow: -1px 4px 5px 0px rgba(163,163,163,1);
+}
+#form input:focus{
+    outline: none;
+    font-weight: 700;
+    opacity: 0.7;
+}
+#form span{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+#input-container{
+    display: flex;
+    justify-content: center;
+}
+#input-container input{
+    width: 600px;
+    height: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(163,163,163,1);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(163,163,163,1);
+    box-shadow: -1px 4px 5px 0px rgba(163,163,163,1);
+}
+#boton-signUp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+#btn-signUp{
+    width: 240px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: #0074E0;
+    color: white;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(163,163,163,1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(163,163,163,1);
+    box-shadow: 0px 0px 10px 1px rgba(163,163,163,1);
+}
+#btn-signUp:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media(max-width:500px){
+    #container{
+        display: block;
+    }
+    #img{
+        height: 320vh;
+        width: 350px;
+        opacity: 0.8;
+    }
+    #signUp{
+        margin-top: 0;
+        width: 100vw;
+        position: absolute;
+        top: 0;right: 0;left: 0;
+        height: 100vh;
+    }
+    #signUp span {
+        padding: 25px 0px 30px 0px;
+        color: white;
+    }
+    #btn-google{
+        width: 300px;
+        background-color: #242424;
+        color: white;
+    }
+    #line{
+        width: 375px;
+    }
+    #title{
+        column-gap: 25px;
+        margin: 0;
+    }
+    #title::before, #title::after{
+        width: 100%/2;
+        background-color: black;
+    }
+    #form{
+        align-items: center;
+        background-color: #242424;
+        width: 90vw;
+        padding:20px 0 20px 0;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+    #input-container{
+        width: 375px;
+    }
+    label{
+        width: 280px;
+    }
+    label span{
+        width: 240px;
+        font-weight: 700;
+        color: white;
+    }
+    #input-container input{
+        width: 260px;
+    }
+    #nombreApellido{
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        gap: 20px;
+    }
+    #boton-logIn{
+        margin-top: 0;
+        padding: 50px 0 20px 0;
+    }
+}

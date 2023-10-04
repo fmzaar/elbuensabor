@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d28cf7f9e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>El Buen Sabor | Home</title>
+</head>
+<body>
+
+    <!--COMIENZO BARRA NAVEGACIÓN-->
+    <div id="barra-nav">
+        <div id="barra-busqueda">
+            <input type="text" placeholder="Buscar..."><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#carrusel">Home</a></li>
+                <li><a href="#hamburguesas">Menú/Categorias</a></li>
+                <li><a href="#promociones">Promos</a></li>
+                <li><a href="#contactanos">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div id="btn-sesiones">
+        <div id="menu-toggle">&#9776;</div>
+        <a href="register.html"><button>Sign Up</button></a>
+        <a href="login.html"><button>Log In</button></a>
+        <a href="cartProduct.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+    <!--FIN BARRA NAVEGACIÓN-->
+    <script>
+        // JavaScript para manejar el clic en el botón del menú desplegable
+        document.getElementById('menu-toggle').addEventListener('click', function (e) {
+            e.stopPropagation(); // Evita que el clic en el botón se propague al documento
+            document.getElementById('barra-nav').classList.toggle('active');
+        });
+
+        // Evento de clic en el documento para cerrar el menú desplegable si se hace clic fuera de él
+        document.addEventListener('click', function (e) {
+            const barraNav = document.getElementById('barra-nav');
+            if (barraNav.classList.contains('active') && !barraNav.contains(e.target)) {
+                barraNav.classList.remove('active');
+            }
+        });
+    </script>
+    <!--CARRUSEL-->
+    <div id="carrusel-container">
+        <div id="carrusel"></div>
+    </div>
+    <section class="titulos" id="promociones">
+        <h1>Promociones</h1>
+    </section>
+    <!--FIN CARRUSEL-->
+
+    <!--PRODUCTOS EN PROMOCIÓN-->
+    <div id="producto-seleccionado-container">
+        <div id="producto-seleccionado">
+            <div id="img">
+                <img src="../img/pizza.jpeg" alt="">
+            </div>
+                <div id="nombre-producto-seleccionado">
+                    <span id="nombre">Nombre Producto</span>
+                    <p>Descripción detallada del producto en cuestión</p>
+                    <div id="botones-productos">
+                    <span id="precio">$2900</span>
+                    <a href="http://"><button>Agregar al carrito</button></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+        <div id="producto-seleccionado-container">
+            <div id="producto-seleccionado">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto-seleccionado">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <div id="botones-productos">
+                        <span id="precio">$2900</span>
+                        <a href="http://"><button>Agregar al carrito</button></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div id="producto-seleccionado-container">
+            <div id="producto-seleccionado">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto-seleccionado">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <div id="botones-productos">
+                        <span id="precio">$2900</span>
+                        <a href="http://"><button>Agregar al carrito</button></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div id="producto-seleccionado-container">
+            <div id="producto-seleccionado">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto-seleccionado">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <div id="botones-productos">
+                        <span id="precio">$2900</span>
+                        <a href="http://"><button>Agregar al carrito</button></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!--PRODUCTOS EN PROMOCIÓN-->
+        <!--DIVISIÓN POR CATEGORIAS-->
+        <section class="titulos" id="categorias">
+            <h1>Categorias</h1>
+        </section>
+        <section class="comidas" id="hamburguesas">
+            <h1>Hamburguesas El Buen Sabor</h1>
+        </section>
+
+        <a href="http://"><div id="producto-container">
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div></a>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+        </div>
+
+        <div id="producto-container">
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+        </div>
+
+        <section class="comidas" id="pollo-frito">
+            <h1>Pollo Frito El Buen Sabor</h1>
+        </section>
+
+        <div id="producto-container">
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+        </div>
+
+        <div id="producto-container">
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+        </div>
+
+        <section class="comidas" id="panchos">
+            <h1>Panchos El Buen Sabor</h1>
+        </section>
+        <div id="producto-container">
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+        </div>
+        <div id="producto-container">
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+        </div>
+
+        <section class="comidas" id="bebidas">
+            <h1>Bebidas</h1>
+        </section>
+
+        <div id="producto-container">
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+        </div>
+        <div id="producto-container">
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+        </div>
+        <section class="comidas" id="donas">
+            <h1>Donas El Buen Sabor</h1>
+        </section>
+
+        <div id="producto-container">
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+        </div>
+
+        <div id="producto-container">
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+    
+            <div id="producto">
+                <div id="img">
+                    <img src="../img/pizza.jpeg" alt="">
+                </div>
+                    <div id="nombre-producto">
+                        <span id="nombre">Nombre Producto</span>
+                        <p>Descripción detallada del producto en cuestión</p>
+                        <span id="precio">$2900</span>
+                    </div>
+            </div>
+        </div>
+        <!--FIN DIVISIÓN POR CATEGORIAS-->
+        <div id="agradecimiento">
+            <h1>Gracias por comprar en El Buen Sabor!!</h1>
+        </div>
+        <!--FOOTER-->
+        <footer id="contactanos">
+            <div id="info-contacto">
+                <h2>Contactanos!!</h2>
+                <div id="icon">
+                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i><span>+542617689**</span>
+                </div>
+                <div id="icon">
+                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i><span>ElBuenSaborMendoza@gmail.com</span>
+                </div>
+            </div>
+            <div id="info-empresa">
+                <a href="http://">Términos</a>
+                <a href="http://">Privacidad</a>
+                <a href="http://">©ElBuenSabor Argentina - 2023</a>
+            </div>
+        </footer>
+</body>
+</html>
